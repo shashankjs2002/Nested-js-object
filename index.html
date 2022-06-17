@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List</title>
+</head>
+<body>
+    <h2>Project to retrieve nested js object recursively</h2>
+    
+    <section>
+        <ol id="Items" onclick="">
+        </ol>
+    </section>
+
+    <br>
+
+    <p><b>Javascript Object:</b></p>
+
+    <p>
+        <object type="">
+        const arr = {
+            "Items" : [
+                {
+                    "Mandi" : [
+                        {
+                            "Fruits" : [
+                                "Banana",
+                                "Gauva"
+                            ]
+                        },
+                            
+                        {
+                            "Vegetables" : [
+                                
+                                "Gaajar",
+                                "Karela",
+                                "Peas",
+                                {
+                                    "Green" : [
+                                        "Maithi",
+                                        "Chaulai",
+                                        "Bathua",
+                                    ]
+        
+                                }
+                            ]
+                        }
+                    ] 
+                }
+        
+               ,
+                "Data Cable",
+                "Light Bulb",
+                {
+                    "Kirana" : [
+                        "Shakkar",
+                        "Rava",
+                        {
+                            "Daal" : [
+                                "Ahar",
+                                {
+                                    "Moong" : [
+                                        "Chilka",
+                                        "Dhoba"
+                                    ]
+                                },
+                                "Chane",
+                                {
+                                    "Masoor" : [
+                                        "Black",
+                                        "Red"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+        
+                {
+                    "General" : [
+                        "Mosquito Coil",
+                        "Surf",
+                        "Soap",
+        
+                    ]
+                }
+                
+        
+            ]
+        }
+        </object>
+    </p>
+    
+    <p>
+        arr = Parent object
+        <br>
+        Items = Id of the parent ol tag <br>
+
+    </p>
+    <p>
+        I have make a function named printData() which take arr as arguement. parentData() target the parent by taking key of arr object at 0th index as  this key is same as id of parent ol. 
+
+    </p>
+
+    <p>
+        Value of items are string or object. If object call parent data for that key of object recursively
+    </p>
+
+    <script src="./index.js"></script>
+</body>
+</html>
