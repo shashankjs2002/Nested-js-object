@@ -87,7 +87,7 @@ const arr = {
                         "Ahar",
                         {
                             "Moong" : [
-                                "Chilka",
+                                "Chhilka",
                                 "Dhoba"
                             ]
                         },
